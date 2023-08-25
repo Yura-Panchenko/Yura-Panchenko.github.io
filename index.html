@@ -5,10 +5,224 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <h1>Привет</h1>
+    <div id="wrapper">
+        <header id="header">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./images/logo.svg" alt="webovio" width="256" height="39">
+                    </a>
+                </div>
+                <input id="opener" type="checkbox">
+                <label class="opener" for="opener">
+                    <span>menu</span>
+                </label>
+                <nav class="menu-wrap">
+                    <ul class="menu">
+                        <li><a href="#">Homepage</a></li>
+                        <li>
+                            <a href="#">About author</a>
+                            <ul>
+                                <li><a href="#">Homepage 1</a></li>
+                                <li><a href="#">About author</a></li>
+                                <li><a href="#">Works</a></li>
+                                <li>
+                                    <a href="#">Process</a>
+                                    <ul>
+                                        <li><a href="#">Homepage 2</a></li>
+                                        <li>
+                                            <a href="#">About author</a>
+                                            <ul>
+                                                <li><a href="#">Homepage 2</a></li>
+                                                <li><a href="#">About author</a></li>
+                                                <li><a href="#">Works</a>
+                                                    <ul>
+                                                        <li><a href="#">Homepage 2</a></li>
+                                                        <li><a href="#">About author</a></li>
+                                                        <li><a href="#">Works</a>
+                                                            <ul>
+                                                                <li><a href="#">Homepage 2</a></li>
+                                                                <li><a href="#">About author</a></li>
+                                                                <li><a href="#">Works</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Works</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Contacts</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Works</a>
+                            <ul>
+                                <li><a href="#">Homepage 2</a></li>
+                                <li><a href="#">About author</a></li>
+                                <li>
+                                    <a href="#">Works</a>
+                                    <ul>
+                                        <li><a href="#">Homepage 2</a></li>
+                                        <li><a href="#">About author</a></li>
+                                        <li><a href="#">Works</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Process</a></li>
+                        <li>
+                            <a href="#">Contacts</a>
+                            <ul>
+                                <li><a href="#">Homepage 2</a></li>
+                                <li><a href="#">About author</a></li>
+                                <li><a href="#">Works</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main id="main">
+            <section class="hero-section" style="background-image: url('./images/bg-section.jpg');">
+                <div class="container">
+                    <div class="hero-section-text">
+                        <span class="sub-title">A place where </span>
+                        <h1>A creative agency for redemptive brands</h1>
+                        <p>Anteelo is a leading strategic design firm that builds powerful digital solutions for
+                            startups
+                            and enterprises.</p>
+                        <a href="#" class="link">Get in touch</a>
+                    </div>
+                </div>
+            </section>
+            <section class="columns-section">
+                <div class="container">
+                    <h2>Deation & Evaluation - Best Way <br>to Kick off Your Product Idea</h2>
+                    <ul class="list-card">
+                        <li>
+                            <div class="card">
+                                <h3>Product Design Sprint</h3>
+                                <p>A five-day workshop that will help you answer crucial business questions</p>
+                                <a href="#" class="link">Read More</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card">
+                                <h3>Product Design Sprint</h3>
+                                <p>A five-day workshop that will help you answer crucial business questions</p>
+                                <a href="#" class="link">Read More</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card">
+                                <h3>Product Design Sprint</h3>
+                                <p>A five-day workshop that will help you answer crucial business questions</p>
+                                <a href="#" class="link">Read More</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card">
+                                <h3>Product Design Sprint</h3>
+                                <p>A five-day workshop that will help you answer crucial business questions</p>
+                                <a href="#" class="link">Read More</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="get-started-section">
+                <div class="container">
+                    <div class="get-started-section-hoder">
+                        <h2>Let’s make something amazing together.</h2>
+                        <a href="#" class="link">LET'S GET STARTED</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="container">
+                <div class="footer-panel">
+                    <div class="box">
+                        <h5>Phone</h5>
+                        <a href="tel: +3250312832">+32 50 31 28 32</a>
+                    </div>
+                    <div class="box">
+                        <h5>Address</h5>
+                        <address>491 Merlin Crest Suite 963</address>
+                    </div>
+                </div>
+                <div class="footer-content">
+                    <div class="box">
+                        <nav class="block">
+                            <h4>Services</h4>
+                            <ul class="menu-footer">
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </nav>
+                        <nav class="block">
+                            <h4>Help And Advice</h4>
+                            <ul class="menu-footer">
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                            </ul>
+                        </nav>
+                        <nav class="block">
+                            <h4>Company</h4>
+                            <ul class="menu-footer">
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="box">
+                        <div class="block">
+                            <h4></h4>
+                            <p></p>
+                            <a href="mailto:info.webovio@gmail.com" class="email">info.webovio@gmail.com</a>
+                            <ul class="socilnetwork">
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bar">
+                    <div class="footer-logo">
+                        <a href="#">
+                            <img src="./images/logo.svg" alt="webovio" width="256" height="39">
+                        </a>
+                    </div>
+                    <div class="copyright">
+                        <p>© 2020@webovio. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>

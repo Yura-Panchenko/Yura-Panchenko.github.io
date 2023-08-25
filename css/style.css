@@ -1,0 +1,294 @@
+body {
+    font-size: 14px;
+    line-height: 26px;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: rgba(33, 56, 66, .6);
+}
+
+#wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#header {
+    padding: 23px 0;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#header .container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.logo {
+    float: left;
+}
+
+.logo a {
+    display: block;
+}
+
+.menu-wrap {
+    float: right;
+    position: fixed;
+    background: #000;
+    width: 300px;
+    padding: 60px 20px 20px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateX(100%);
+    /* inset: 0 0 0 auto; */
+    transition: all 0.8s;
+}
+
+#opener {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#opener:checked~.menu-wrap {
+    transform: translateX(0);
+}
+
+.opener {
+    position: relative;
+    z-index: 5;
+    float: right;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 0;
+    cursor: pointer;
+    transition: box-shadow 0.8s;
+}
+
+.opener:hover {
+    box-shadow: 0 0 8px rgba(255, 255, 255, .8);
+}
+
+.opener:before,
+.opener:after,
+.opener span {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 2px;
+    background: #000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.8s;
+}
+
+.opener:before {
+    top: 35%;
+}
+
+.opener:after {
+    top: 65%;
+}
+
+#opener:checked+.opener:before {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(225deg);
+}
+
+#opener:checked+.opener:after {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-225deg);
+}
+
+#opener:checked+.opener span {
+    width: 0;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu>li {
+    /* display: inline-block; */
+    padding: 0 10px;
+    position: relative;
+}
+
+.menu li:hover {
+    background: red;
+}
+
+.menu li:hover>ul {
+    display: block;
+}
+
+.menu ul {
+    width: 120px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    display: none;
+}
+
+.menu ul ul {
+    top: 0;
+    left: auto;
+    right: 100%;
+}
+
+.menu ul>li {
+    position: relative;
+    padding: 0 10px;
+}
+
+.menu a {
+    display: block;
+}
+
+.hero-section {
+    padding: 184px 0 100px;
+    min-height: 810px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    background-size: cover;
+}
+
+.hero-section .link {
+    color: #FFD723;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hero-section-text {
+    max-width: 53%;
+}
+
+.hero-section p {
+    margin: 0 0 20px;
+}
+
+.sub-title {
+    display: block;
+    margin: 0 0 20px;
+    font-size: 14px;
+}
+
+h1 {
+    margin: 0 0 25px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 74px;
+}
+
+h2 {
+    margin: 0 0 20px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    color: #4D533C;
+}
+
+h3 {
+    margin: 0 0 20px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #4D533C;
+}
+
+h5 {
+    margin: 0 0 20px;
+}
+
+.link {
+    font-weight: 700;
+    color: #D4D6D4;
+}
+
+.link:before {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-color: transparent transparent transparent currentColor;
+}
+
+.link:hover {
+    color: #FFD723;
+}
+
+.columns-section {
+    padding: 151px 0;
+}
+
+.columns-section h2 {
+    margin-bottom: 86px;
+}
+
+.list-card {
+    margin: 0 -15px;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.list-card>li {
+    float: left;
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.card p {
+    margin: 0 0 20px;
+}
+
+.get-started-section {
+    position: relative;
+}
+
+.get-started-section-hoder {
+    margin-left: -9999px;
+    padding: 70px 0 70px 9999px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    background: #FAFAFA;
+}
+
+.get-started-section h2 {
+    margin: 0 0 50px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 74px;
+}
+
+#footer {
+    background: #4F553D;
+    margin-top: -191px;
+    padding-top: 280px;
+}
